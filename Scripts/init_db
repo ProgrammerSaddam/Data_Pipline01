@@ -1,1 +1,26 @@
 
+-- Data Engineering
+use master
+go
+
+--# 1 : Create 
+if exists(select * from sys.databases where name='DataWarehouse')
+Begin
+	drop database DataWarehouse;
+End
+go
+
+create database DataWarehouse
+go
+
+use DataWarehouse
+go
+
+--# 2 : Create schema for 3 layers
+create schema bronze
+go
+create schema silver
+go
+create schema gold
+go
+
