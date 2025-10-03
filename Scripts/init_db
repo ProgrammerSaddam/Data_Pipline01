@@ -1,4 +1,8 @@
-
+/*
+################################################################################
+Warning : execute this script will drop entire datawarehouse and all data will be loss
+################################################################################
+*/
 -- Data Engineering
 use master
 go
